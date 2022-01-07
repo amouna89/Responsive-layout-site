@@ -1,0 +1,137 @@
+
+body{
+    
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+
+header,main{
+    
+    text-align: center;
+}
+
+
+
+/*header section*/
+
+.container {
+
+    background-color: #fafafa;
+    padding-bottom: 20px;
+}
+h1{
+    
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-top: 0;/*to delete the space between the header and the top of the screen */
+    padding: 2em 0;
+ 
+}
+
+nav ul {
+    list-style-type: none;/*pour enlever les points devant les lignes de la liste*/
+   
+}
+
+nav ul li{
+
+    background-color: white;
+    padding:15px;
+    width:270px;
+    margin:5px auto;
+    
+    
+}
+
+ a {
+    
+     text-decoration: none;/*pour enlever les lignes sous les liens*/
+     color: black;
+     font-weight: bold;
+        
+}
+/* styling the article id="about"*/
+
+
+#about img {
+    
+    width: 60wv;/*60% of the viewport width*/
+    margin: 35px auto;
+    
+}
+#about p{
+    color:rgba(103, 40, 51, 0.5);
+    margin-bottom: 20px;
+    word-spacing: 3px;
+    
+}
+
+/*styling the main section*/
+
+
+main h4{
+
+     font-size: 1.25em;  
+}
+
+main p{
+ 
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+main img {
+    width: 100vw;
+}
+
+/*styling the footer*/
+
+footer{
+    
+     background-color: #fafafa;
+}
+.Contactpart1 h3{
+    
+    padding:20px 0;
+}
+.Contactpart1 p{
+      
+     color:rgba(103, 40, 51, 0.5);
+}
+
+.Contactpart1 h4{
+     color:rgba(103, 40, 51, 0.5);
+    font-weight: normal;
+     display:inline-block;
+
+}
+
+span.contactInfo {
+    font-weight:bold;
+    color:rgba(103, 40, 51, 0.5);
+    
+}
+
+.Contactpart1 {
+    text-align: center;
+    border-bottom: 2px solid #DFDFDF;
+}
+
+.Contactpart2 h4 {
+    color: black;
+    margin-top:20px;
+    display: inline-block;
+    padding-left: 20px;
+    
+}
+.Contactpart2 a {
+    float: right;
+    margin-top: 20px;
+    
+}
+
+/*Media QUERIES*/

@@ -2,91 +2,119 @@
 <html>
 
 <head>
-       <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Responsive website</title>
+        
+        <meta charset="utf-8">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+
         <link href="css/styles.css" rel="stylesheet">
 
+
+        <title>Responsive website</title>
+        
+        
 </head>  
 <body>
-<header>
-    <div>
-        <h1>Student Name</h1>
-        <nav>
-            <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
-    </div>
-</header> 
-<main>
- 
-   <section id="background">
-        <p>Hi!I'm a front-end developper who loves responsive design and css. <br>I recently finished learning front-end web  developement at Treehouse and am excited to put all my skills to use!</p>
-        <img src="images/responsive-layout-profile.png" alt="profile image">
-    
-   </section>
    
-    
-    
-    <section id="portfolio">
-        <div>
-            <h2>Portfolio</h2>
-            <article>
+    <header>
+        <div class="container">
+        <section id="Home" >
+            <h1>Student Name</h1>
+            <nav>
+                <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#Portfolio">PORTFOLIO</a></li>
+                <li><a href="#Contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <article id="about">
+          <img src="images/responsive-layout-profile.png" alt="profile image">
+            <p>Hi! I'm a front-end developper who loves responsive design and css.I recently finished learning front-end web  developement at Treehouse and I am excited to put all my skills to use!</p>
+            </article>
+        </section>
+    </div>
+    </header> 
+
+
+    <main>
+
+        <section id="Portfolio">
             
-            <h3>Marketing Page</h3>
-            <p></p>
-            <img>
+                <h3>PORTFOLIO</h3>
+                
+              <article >
+
+                 <img src="images/portfolio-1.png" atl="image for the marketing page">
+                    <h4>Marketing Page</h4>
+                    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+
+                </article>
+
+                <article >
+                 <img src="images/portfolio-2.png" alt="image for the search page">
+                    <h4>Search Page</h4>
+                    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+
+                </article>
+
+                <article >     
+                  <img src="images/portfolio-3.png" alt="image for the travel App">
+                    <h4>Travel App</h4>
+                    <p>This project compares travel times based on different transportation methods and tells you the best one .</p>
+                </article>
+
+                <article>
+    <img src ="images/portfolio-4.png" alt ="image for the map of favorite spots">
+                    <h4>Map of favorite Spots</h4>    
+                    <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yoursel</p>
+                </article>
+
+
+                <article >
+                    <img src="images/portfolio-5.png">
+                    <h4>Photo Gallery</h4>
+                    <p>This project shows pictures form a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                </article>
+
+                <article > 
+                   <img src="images/portfolio-6.png">
+                    <h4>Calculator</h4>
+                    <p>Someone can enter in the numbers <br> they want,and press the big blue button and get the result.</p>
+
+                </article>
+
+        
+        </section>
+
+
+    </main>
+
+
+    <footer>
+     
+        <section id="Contact">
+            <article class="Contactpart1">
+                <h3>CONTACT</h3>
+                <p>If you're intrested in chatting or want more information  
+                    about what I've been working on,I'd love to hear from you!</p>
+                    <h4>Phone</h4><span class="contactInfo">+1(111) 555-1234</span><br>
+                <h4>Email</h4> <span class="contactInfo"> email@yoursite.com</span>
+            </article>
+             <article class="Contactpart2">
+                <h4>Student name</h4>
+                <a href="#Home">BACK TO TOP</a>
             </article>
             
-            <article>
-            
-            <h3>Search Page</h3>
-            <p></p>
-            <img>
-            </article>
-            <article>
-            
-            <h3>Travel App</h3>
-            <p></p>
-            <img>
-            </article>
-            <article>
-            
-            <h3>Map of favorite Spots</h3>
-            <p></p>
-            <img>
-            </article>
-            <article>
-            
-            <h3>Photo Gallery</h3>
-            <p></p>
-            <img>
-            </article>
-            <article>
-            
-            <h3>Calculator</h3>
-            <p></p>
-            <img>
-            </article>
-            
-       </div>
-    </section>
-    
-    
-    
-    
-    
-    
-</main>
-    
-    
-    
-    
-    
-<footer></footer>
+        </section>
+        
+    </footer>
+
+        
+        
 </body>
 
 
