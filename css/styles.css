@@ -1,51 +1,63 @@
 
-body{
-    
-    margin: 0;
-/*    box-sizing: border-box; */
-    font-family: 'Roboto', sans-serif;
-    
+*{
+    box-sizing: border-box; 
+    margin:0;
+    padding:0;
 }
 
+
+html{
+
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;/*root font size*/
+    
+}
 
 
 header,main{
     
     text-align: center;
+    
 }
 
 
 
 /*header section*/
 
-.container {
-
+header {
+    
     background-color: #fafafa;
-    padding-bottom: 20px;
 }
+
+.MainListContainer{
+
+    
+    display:flex;
+    flex-direction:column;
+  
+    
+}
+
 h1{
      
-    font-size: 2em;
+    font-size: 1.5rem;
     margin-bottom: 30px;
     margin-top: 0;/*to delete the space between the header and the top of the screen */
-    padding: 2em 0;
+   padding: 2rem 0;
  
 }
+
 
 nav ul {
     list-style-type: none;/*pour enlever les points devant les lignes de la liste*/
     
-    border: 2px solid black;
 }
 
-nav ul li{
+.listContainer li{
 
     background-color: white;
-    padding:15px;
-    width:90vw;
-    margin:5px auto;
-    
-    
+    margin:5px auto;   
+    width: 60%;
 }
 
  a {
@@ -55,28 +67,39 @@ nav ul li{
      font-weight: bold;
         
 }
-/* styling the main image and the parag of the header */
+/* styling the header */
 
 
-.container img {
+
+
+.MainImageContainer{
+    display: flex;
+    flex-direction: column;
     
+}
+
+
+.MainImageContainer img {   
     margin: 35px auto;
     width:70vw;
     
 }
-.container p{
+.MainImageContainer p{
     color:rgba(103, 40, 51, 0.5);
     margin-bottom: 20px;
     word-spacing: 3px;
     
 }
 
-/*styling the main section*/
+/*styling the portfolio section*/
 
 
+main h3{
+    font-size: 1.25rem;
+}
 main h4{
 
-     font-size: 1.25em;  
+     font-size: 1rem;  
 }
 
 main p{
@@ -86,57 +109,232 @@ main p{
     
 }
 main img {
-    width: 100vw;
+   width: 100%;
     margin:20px auto;
 }
 
-/*styling the footer*/
 
-footer{
+/*styling the Contact section*/
+.ContactWrapper{
     
      background-color: #fafafa;
 }
-.Contactpart1 h3{
+
+.ContactWrapper h3{
     
     padding:20px 0;
 }
-.Contactpart1 p{
-      
+.ContactWrapper p{
+     
      color:rgba(103, 40, 51, 0.5);
+     margin:15px;
 }
+.ContactWrapper {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+.ContainerInfo {
+    display: flex;   
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
 
-.Contactpart1 h4{
+}
+.ContainerInfo h4{
      color:rgba(103, 40, 51, 0.5);
-    font-weight: normal;
-     display:inline-block;
     margin-right: 20px;
 
 }
-
 span.contactInfo {
     font-weight:bold;
     color:rgba(103, 40, 51, 0.5);
     
 }
+/*styling the footer*/
 
-.Contactpart1 {
-    text-align: center;
-    border-bottom: 2px solid #DFDFDF;
+
+.footerwrapper {
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    border-top: 2px solid #DFDFDF;
+    
 }
 
-.Contactpart2 h4 {
+.footerwrapper h4 {
     color: black;
     margin-top:20px;
-    display: inline-block;
     margin-left:10px;
+    margin-right: auto;
     
 
 }
-.Contactpart2 a {
-    float: right;
+.footerwrapper a {
+
     margin-top: 20px;
     margin-right: 10px;
     
 }
 
+.hiddenFooter {
+    
+    display: none;
+}
+
 /*Media QUERIES*/
+
+
+/*tablets media querie*/
+
+@media screen and (min-width: 768px) {
+    
+
+
+.listContainer li {
+        width: 30%;
+       background-color: #fafafa; 
+       
+    }
+    .listContainer {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        
+    }
+    
+    
+    
+    .MainImageContainer{
+    display: flex;
+    flex-direction: row-reverse;
+        
+    
+    }
+    
+    .MainImageContainer img {
+        
+        width: 30%;
+        align-self: flex-start;
+    }
+    .MainImageContainer p{
+        
+        margin-top: 35px;
+        margin-left: 15px;
+        margin-right: 10px;
+        align-self: flex-start;
+        text-align: justify;
+        
+    }
+    
+
+.PortfolioContainer{
+
+    display:flex;
+    flex-wrap: wrap;   
+   
+
+}
+.item {
+    
+    flex-grow: 1;
+    flex-basis: 350px;
+    margin-right: 10px;
+}
+
+.hiddenFooter {
+    
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+} 
+
+.backtop {
+        display: none;
+    }
+
+}
+
+/*desktop media querie*/
+@media screen and (min-width: 1024px)  {
+    
+
+    .MainListcontainer {
+        display: flex;
+    
+    }
+
+    
+    .listContainer {
+        display: flex;
+        flex-direction:row;
+        width: 50vw;
+        justify-content: space-between;
+        margin-top:5vh;
+        
+    }
+    
+    .listContainer li {
+
+       background-color: #fafafa; 
+       
+    }
+  
+
+    .MainListcontainer h1 {
+        
+        margin-right:auto;
+        margin-left:20px;
+    }
+    
+      .MainImageContainer{
+    display: flex;
+    flex-direction: row-reverse;
+
+    
+    }
+     .MainImageContainer img {
+        
+        width: 30%;
+        align-self: flex-start;
+    }
+    .MainImageContainer p{
+        
+        margin-top: 35px;
+        margin-left: 15px;
+        margin-right: 10px;
+        align-self: flex-start;
+        text-align: justify;
+        
+    }
+
+
+   .PortfolioContainer{
+
+    display:flex;
+    flex-wrap: wrap;   
+    
+
+}
+.item {
+    
+    flex-grow: 1;
+    flex-basis: 260px;
+     margin-right: 10px;
+}
+    .hiddenFooter {
+    
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+} 
+
+.backtop {
+        display: none;
+    }
+
+}
+    

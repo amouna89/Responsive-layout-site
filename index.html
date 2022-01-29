@@ -4,7 +4,11 @@
 <head>
         
         <meta charset="utf-8">
-        <meta name=viewport content="width=device-width, initial-scale=1">
+    
+        
+ <meta name=viewport content="width=device-width, initial-scale=1">  
+    
+<!-- initial-scale veut dire que le navigateur ne doit faire un zoom out sur le site web quand il le lance la premiere fois -->
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,95 +25,120 @@
 <body>
    
     <header>
-        <div class="container">
+        
         <section id="Home" >
-            <h1>Student Name</h1>
-            <nav>
-                <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#Portfolio">PORTFOLIO</a></li>
-                <li><a href="#Contact">CONTACT</a></li>
-                </ul>
-            </nav>
-            <article>
-          <img src="images/responsive-layout-profile.png" alt="profile image">
-            <p>Hi! I'm a front-end developper who loves responsive design and css.I recently finished learning front-end web  developement at Treehouse and I am excited to put all my skills to use!</p>
-            </article>
+                <div class="MainListcontainer">
+                    <h1 >Student Name</h1>
+                    <nav>
+                        <ul class="listContainer" >
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#Portfolio">PORTFOLIO</a></li>
+                        <li><a href="#Contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div class="MainImageContainer" >
+                  <img  class="profileImage" src="images/responsive-layout-profile.png" alt="profile image">
+                  <p>Hi! I'm a front-end developper who loves responsive design and css.I recently finished learning front-end web  developement at Treehouse and I am excited to put all my skills to use!</p>
+                </div>
+            
         </section>
-    </div>
+    
     </header> 
 
 
     <main>
 
         <section id="Portfolio">
+               
+                        <h3>PORTFOLIO</h3>
             
-                <h3>PORTFOLIO</h3>
+            <div class="PortfolioContainer">
                 
-              <article >
+                      <article class="item">
 
-                 <img src="images/portfolio-1.png" atl="image for the marketing page">
-                    <h4>Marketing Page</h4>
-                    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+                       <img src="images/portfolio-1.png" alt="image for the marketing page">
+                            <h4>Marketing Page</h4>
+                            <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
 
-                </article>
+                        </article>
 
-                <article >
-                 <img src="images/portfolio-2.png" alt="image for the search page">
-                    <h4>Search Page</h4>
-                    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+                        <article class="item">
+                         <img src="images/portfolio-2.png" alt="image for the search page">
+                            <h4>Search Page</h4>
+                            <p>This project searches through a specific database to find information that the user is trying to look up.</p>
 
-                </article>
+                        </article>
 
-                <article >     
-                  <img src="images/portfolio-3.png" alt="image for the travel App">
-                    <h4>Travel App</h4>
-                    <p>This project compares travel times based on different transportation methods and tells you the best one .</p>
-                </article>
+                        <article  class="item">     
+                          <img src="images/portfolio-3.png" alt="image for the travel App">
+                            <h4>Travel App</h4>
+                            <p>This project compares travel times based on different transportation methods and tells you the best one .</p>
+                        </article>
 
-                <article>
-    <img src ="images/portfolio-4.png" alt ="image for the map of favorite spots">
-                    <h4>Map of favorite Spots</h4>    
-                    <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yoursel</p>
-                </article>
+                        <article  class="item">
+                        <img src ="images/portfolio-4.png" alt ="image for the map of favorite spots">
+                            <h4>Map of favorite Spots</h4>    
+                            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yoursel</p>
+                        </article>
 
 
-                <article >
-                    <img src="images/portfolio-5.png">
-                    <h4>Photo Gallery</h4>
-                    <p>This project shows pictures form a recent trip to the viewer and allows them to easily navigate through photos.</p>
-                </article>
+                        <article  class="item">
+                            <img src="images/portfolio-5.png" alt="image for photo gallery">
+                            <h4>Photo Gallery</h4>
+                            <p>This project shows pictures form a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                        </article>
 
-                <article > 
-                   <img src="images/portfolio-6.png">
-                    <h4>Calculator</h4>
-                    <p>Someone can enter in the numbers <br> they want,and press the big blue button and get the result.</p>
+                        <article  class="item"> 
+                           <img src="images/portfolio-6.png" alt="image for Calculator">
+                            <h4>Calculator</h4>
+                            <p>Someone can enter in the numbers <br> they want,and press the big blue button and get the result.</p>
 
-                </article>
+                        </article>
+             </div>
 
-        
         </section>
+          
+        <section id="Contact">
+            
+           
+                
+                <div class="ContactWrapper" >
+                    
+                <h3>CONTACT</h3>
+                <p>If you're intrested in chatting or want more information  
+                    about what I've been working on,I'd love to hear from you!</p>
+                    
+                
+            
+                    <div class="ContainerInfo"><h4>Phone</h4><span class="contactInfo">+1(111) 555-1234</span><br></div> 
+                    <div  class="ContainerInfo"><h4>Email</h4> <span class="contactInfo"> email@yoursite.com</span></div>
+            </div>
 
+
+          </section> 
 
     </main>
 
 
     <footer>
      
-        <section id="Contact">
-            <article class="Contactpart1">
-                <h3>CONTACT</h3>
-                <p>If you're intrested in chatting or want more information  
-                    about what I've been working on,I'd love to hear from you!</p>
-                    <h4>Phone</h4><span class="contactInfo">+1(111) 555-1234</span><br>
-                <h4>Email</h4> <span class="contactInfo"> email@yoursite.com</span>
-            </article>
-             <article class="Contactpart2">
+        <div class="footerwrapper">
+             
                 <h4>Student name</h4>
-                <a href="#Home">BACK TO TOP</a>
-            </article>
+                <a class="backtop" href="#Home">BACK TO TOP</a>
+                   
+                   <nav>
+                        <ul class="hiddenFooter" >
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#Portfolio">PORTFOLIO</a></li>
+                        <li><a href="#Contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
             
-        </section>
+        </div>
         
     </footer>
 
