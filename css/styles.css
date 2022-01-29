@@ -154,6 +154,16 @@ span.contactInfo {
     color:rgba(103, 40, 51, 0.5);
     
 }
+
+/*styling the skills sections*/
+
+.SkillsWrapper img{
+    width: 60%;
+}
+
+.SkillsWrapper{
+    background-color: lightcyan;
+}
 /*styling the footer*/
 
 
