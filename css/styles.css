@@ -23,11 +23,13 @@ html{
 }
 h1,h2,h3,h4{
     font-weight: 700;
+    color:#003e6a;
 }
 
 p{
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 2px;/*permet de controler l'espace entre les mots */
+    
 
 }
 
@@ -86,7 +88,7 @@ nav ul {
  a {
     
      text-decoration: none;/*pour enlever les lignes sous les liens*/
-     color: black;
+     color: #003e6a;
      font-weight: bold;
         
 }
@@ -147,7 +149,7 @@ main img {
 }
 .ContactWrapper p{
      
-     color:rgba(103, 40, 51, 0.5);
+    
      margin:15px;
 }
 .ContactWrapper {
@@ -166,7 +168,7 @@ main img {
 
 }
 .ContainerInfo h4{
-     color:rgba(103, 40, 51, 0.5);
+     
     margin-right: 20px;
 
 }
@@ -196,7 +198,7 @@ span.contactInfo {
 }
 
 .footerwrapper h4 {
-    color: black;
+ 
     margin-top:20px;
     margin-left:10px;
     margin-right: auto;
