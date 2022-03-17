@@ -45,7 +45,8 @@ header,main{
 }
 
 img {
-    border: 4px solid #003e6a;
+    /*border: 4px solid #003e6a;*/
+    box-shadow: 0 0 5px 5px rgb(248, 248, 12,0.2) ;/*create a shadow inside the box using inset property*/
     border-radius: 15%;
 }
 
