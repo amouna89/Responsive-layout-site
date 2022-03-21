@@ -302,6 +302,7 @@ span.contactInfo {
 
     .MainListcontainer {
         display: flex;
+       justify-content: space-between;
     
     }
 
@@ -324,7 +325,7 @@ span.contactInfo {
 
     .MainListcontainer h1 {
         
-        margin-right:auto;
+
         margin-left:20px;
     }
     
