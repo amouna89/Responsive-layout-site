@@ -29,12 +29,10 @@ h1,h2,h3,h4{
     color:#003e6a;
 }
 
-h1 {
-    
-    text-shadow: 2px 2px 2px rgb(172, 172, 125);
-}
 
-p{
+
+p{  
+    
     font-weight: 400;
     letter-spacing: 2px;/*permet de controler l'espace entre les mots */
     
@@ -50,12 +48,12 @@ header,main{
 
 img {
     /*border: 4px solid #003e6a;*/
-    box-shadow: 0 0 3px 3px rgb(172, 172, 125) ;/*create a shadow inside the box using inset property*/
+    box-shadow: 0 0 3px 3px rgb(236, 79, 0) ;/*create a shadow inside the box using inset property*/
     border-radius: 15%;
 }
 
 img:hover {
-    border: 4px solid rgb(159, 238, 238);
+    border: 4px solid rgb(236, 79, 0);
 }
 
 
